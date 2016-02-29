@@ -20,8 +20,8 @@ import org.springframework.data.cassandra.repository.config.EnableCassandraRepos
 
 
 @Configuration
-@PropertySource(value = { "classpath:application.properties" })
-@EnableCassandraRepositories(basePackages = {"com.myCompany"})
+@PropertySource(value = { "classpath:cassandra.properties" })
+@EnableCassandraRepositories(basePackages = {"com.myCompany."})
 public class CassandraConfig{
 
 	@Autowired
@@ -61,6 +61,7 @@ public class CassandraConfig{
 	private int getPortNumber() {
 		return Integer.parseInt(environment.getProperty(PORT)); 
 	}
+	
 
 	@Bean
 	public CassandraMappingContext mappingContext() {

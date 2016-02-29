@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.myCompany.dao.ProjectDAO;
 import com.myCompany.objects.Project;
-import com.myCompany.util.MyCassandraTemplate;
+import com.myCompany.config.MyCassandraTemplate;
 
 @Repository
 public class ProjectDAOImpl implements ProjectDAO {

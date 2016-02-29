@@ -3,8 +3,10 @@ package com.myCompany.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.myCompany.objects.Employee;
+import org.springframework.stereotype.Service;
 
+import com.myCompany.objects.Employee;
+@Service
 public interface EmployeeService {
 
 	/**

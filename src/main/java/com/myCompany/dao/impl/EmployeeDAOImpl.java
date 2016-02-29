@@ -1,14 +1,13 @@
 package com.myCompany.dao.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.myCompany.config.MyCassandraTemplate;
 import com.myCompany.dao.EmployeeDAO;
 import com.myCompany.objects.Employee;
-import com.myCompany.util.*;
 @Repository
 public class EmployeeDAOImpl implements EmployeeDAO {
 	

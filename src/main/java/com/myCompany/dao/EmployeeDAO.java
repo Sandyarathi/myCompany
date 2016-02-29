@@ -3,11 +3,14 @@ package com.myCompany.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.myCompany.objects.Employee;
 
 /**
 * DAO interface for Employee to perform CRUD operation.
 * */
+@Repository
 public interface EmployeeDAO {
 /**
 * Used to Create the Employee Information

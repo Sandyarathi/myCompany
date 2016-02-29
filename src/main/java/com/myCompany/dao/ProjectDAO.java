@@ -2,8 +2,10 @@ package com.myCompany.dao;
 
 import java.util.List;
 
-import com.myCompany.objects.Project;
+import org.springframework.stereotype.Repository;
 
+import com.myCompany.objects.Project;
+@Repository
 public interface ProjectDAO {
 	
 	/**

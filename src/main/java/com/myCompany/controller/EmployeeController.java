@@ -13,10 +13,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.myCompany.objects.Employee;
 import com.myCompany.service.EmployeeService;
+
+import flexjson.JSONSerializer;
 
 @RestController
 @RequestMapping("/cmpe282SandyarathiDas4036/rest")
@@ -31,10 +34,11 @@ public class EmployeeController {
 		System.out.println("EmployeeController()");
 	}
 	
-	@RequestMapping(value="/employee", method = RequestMethod.POST, 
-			produces = "application/json", consumes= "application/json")
+	@RequestMapping(value="/employee", method = RequestMethod.POST)
+	@ResponseBody
 	public ResponseEntity<Employee> createEmployee( @RequestBody @Valid Employee employee){
 		Employee emp = employeeService.createEmployee(employee);
+		//String jsonString = new JSONSerializer().serialize(emp);
 		if(emp != null)
 			return new ResponseEntity<Employee>(emp,HttpStatus.CREATED);
 		else

@@ -14,6 +14,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	@Autowired
 	private MyCassandraTemplate myCassandraTemplate;
 
+	
 	@Override
 	public Employee createEmployee(Employee employee) {
 		// TODO Auto-generated method stub

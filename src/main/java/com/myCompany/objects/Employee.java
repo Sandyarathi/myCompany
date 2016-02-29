@@ -7,7 +7,7 @@ import org.springframework.data.cassandra.mapping.Table;
 public class Employee {
 	
 	@PrimaryKey("id")
-	private int id;
+	public Integer id;
 	
 	
 
@@ -32,14 +32,14 @@ public class Employee {
 	* @param firstname
 	* @param  lastname
 	*/
-	public Employee(int id, String firstname, String lastname ) {
+	public Employee(Integer id, String firstname, String lastname ) {
 		super();
 		this.id = id;
 		this.firstName = firstname;
 		this.lastName = lastname;
 	}
 	
-	public int getId() {
+	/*public Integer getId() {
 		return id;
 	}
 
@@ -66,9 +66,9 @@ public class Employee {
 	/* (non-Javadoc)
 	* @see java.lang.Object#toString()
 	*/
-	@Override
+	/*@Override
 	public String toString() {
 	return "Employee [id=" + id + ", first name=" + firstName + ", last name" + lastName + "]";
-	}
+	}*/
 
 }

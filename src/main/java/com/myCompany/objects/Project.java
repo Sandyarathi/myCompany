@@ -7,20 +7,20 @@ import org.springframework.data.cassandra.mapping.Table;
 public class Project {
 	
 	@PrimaryKey("id")
-	private int id;
+	public Integer id;
 	
 	@NotNull
 	@Column("name")
-	private String name;
+	public String name;
 	
 	@Column(value = "budget")
-	private Float budget;
+	public Float budget;
 
-	public int getId() {
+	/*public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -43,8 +43,8 @@ public class Project {
 	/* (non-Javadoc)
 	* @see java.lang.Object#toString()
 	*/
-	@Override
+	/*@Override
 	public String toString() {
 	return "Project [id=" + id + ", name=" + name + ", budget=" + budget + "]";
-	} 
+	} */
 }

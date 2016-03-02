@@ -17,19 +17,16 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	
 	@Override
 	public Employee createEmployee(Employee employee) {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.create(employee);
 	}
 
 	@Override
 	public Employee getEmployee(int id) {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.findById(id, Employee.class);
 	}
 
 	@Override
 	public Employee updateEmployee(Employee employee) {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.update(employee, Employee.class); 
 	}
 
@@ -41,13 +38,11 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 	@Override
 	public List<Employee> getAllEmployees() {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.findAll(Employee.class);
 	}
 
 	@Override
 	public boolean employeeExists(int id) {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.exists(id, Employee.class);
 	}
 }

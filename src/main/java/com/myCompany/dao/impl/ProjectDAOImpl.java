@@ -17,19 +17,16 @@ public class ProjectDAOImpl implements ProjectDAO {
 	
 	@Override
 	public Project createProject(Project project) {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.create(project);
 	}
 
 	@Override
 	public Project getProject(int id) {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.findById(id, Project.class);
 	}
 
 	@Override
 	public Project updateProject(Project project) {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.update(project, Project.class); 
 	}
 
@@ -41,13 +38,11 @@ public class ProjectDAOImpl implements ProjectDAO {
 
 	@Override
 	public List<Project> getAllProjects() {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.findAll(Project.class);
 	}
 
 	@Override
 	public boolean projectExists(int id) {
-		// TODO Auto-generated method stub
 		return myCassandraTemplate.exists(id, Project.class);
 	}
 

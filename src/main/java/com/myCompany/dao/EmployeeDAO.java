@@ -1,6 +1,5 @@
 package com.myCompany.dao;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -50,4 +49,5 @@ public List<Employee> getAllEmployees();
  * Check if employee record exists
  * */
  public boolean employeeExists(int id);
+ 
 }

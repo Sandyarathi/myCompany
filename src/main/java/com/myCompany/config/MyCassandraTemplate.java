@@ -34,7 +34,7 @@ public class MyCassandraTemplate {
 	/**
 	* Updating the entity.
 	* @param entity
-	* @param claz
+	* @param c
 	* @return T
 	*/
 	public <T> T update(T entity) { 
@@ -44,7 +44,7 @@ public class MyCassandraTemplate {
 	/**
 	* Updating the list of entities.
 	* @param entity
-	* @param claz
+	* @param c
 	* @return T
 	*/
 	public <T> void updateList(List<T> entities) { 
@@ -54,30 +54,30 @@ public class MyCassandraTemplate {
 	/**
 	* Updating the entity.
 	* @param entity
-	* @param claz
+	* @param c
 	* @return T
 	*/
-	public <T> T update(T entity, Class<T> claz) { 
+	public <T> T update(T entity, Class<T> c) { 
 		return (T) cassandraTemplate.update(entity);
 	}
 	
 	/**
 	* Get the Entity using Id.
 	* @param id
-	* @param claz
+	* @param c
 	* @return T
 	*/
-	public <T> T findById(Object id, Class<T> claz) {
-		return cassandraTemplate.selectOneById(claz, id);
+	public <T> T findById(Object id, Class<T> c) {
+		return cassandraTemplate.selectOneById(c, id);
 	}
 	
 	/**
 	* Delete the Entity using Id.
 	* @param id
-	* @param claz
+	* @param c
 	*/
-	public <T> void deleteById(Object id, Class<T> claz) {
-		cassandraTemplate.deleteById(claz, id);
+	public <T> void deleteById(Object id, Class<T> c) {
+		cassandraTemplate.deleteById(c, id);
 	}
 	
 	/**
@@ -98,58 +98,58 @@ public class MyCassandraTemplate {
 	
 	/**
 	* Deleting the all entities. 
-	* @param claz
+	* @param c
 	*/
-	public <T> void deleteAll(Class<T> claz) {
-		cassandraTemplate.deleteAll(claz);
+	public <T> void deleteAll(Class<T> c) {
+		cassandraTemplate.deleteAll(c);
 	}
 	
 	/**
 	* Getting the all entities.
-	* @param claz
+	* @param c
 	* @return List of entities
 	*/
-	public <T> List<T> findAll(Class<T> claz) {
-		return (List<T>) cassandraTemplate.selectAll(claz);
+	public <T> List<T> findAll(Class<T> c) {
+		return (List<T>) cassandraTemplate.selectAll(c);
 	}
 	
 	/**
 	* Getting the all entity values using specific id's data.
 	* @param ids
-	* @param claz
+	* @param c
 	* @return
 	*/
-	public <T> List<T> findAll(List<Object> ids, Class<T> claz) {
-		return cassandraTemplate.selectBySimpleIds(claz, ids);
+	public <T> List<T> findAll(List<Object> ids, Class<T> c) {
+		return cassandraTemplate.selectBySimpleIds(c, ids);
 	}
 	
 	/**
 	* Getting the count of records.
-	* @param claz
+	* @param c
 	* @return the count value.
 	*/
-	public <T> void truncate(Class<T> claz) {
-		cassandraTemplate.truncate(claz.getName());
+	public <T> void truncate(Class<T> c) {
+		cassandraTemplate.truncate(c.getName());
 	}
 	
 	/**
 	* Getting the count of records.
-	* @param claz
+	* @param c
 	* @return the count value.
 	*/
-	public <T> long getCount(Class<T> claz) {
-		return cassandraTemplate.count(claz);
+	public <T> long getCount(Class<T> c) {
+		return cassandraTemplate.count(c);
 	} 
 	
 	
 	/**
 	* Checking the object exists or not.
 	* @param id
-	* @param claz
+	* @param c
 	* @return true if the object exists in the database otherwise it will return false.
 	*/
-	public <T> boolean exists(Object id, Class<T> claz) {
-		return cassandraTemplate.exists(claz, id);
+	public <T> boolean exists(Object id, Class<T> c) {
+		return cassandraTemplate.exists(c, id);
 	}
 
 }

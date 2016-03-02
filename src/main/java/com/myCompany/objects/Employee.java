@@ -39,36 +39,5 @@ public class Employee {
 		this.lastName = lastname;
 	}
 	
-	/*public Integer getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	
-	/* (non-Javadoc)
-	* @see java.lang.Object#toString()
-	*/
-	/*@Override
-	public String toString() {
-	return "Employee [id=" + id + ", first name=" + firstName + ", last name" + lastName + "]";
-	}*/
 
 }

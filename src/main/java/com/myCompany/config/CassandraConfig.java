@@ -27,19 +27,8 @@ public class CassandraConfig{
 	@Autowired
 	private Environment environment;
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(CassandraConfig.class);
-
-	/**
-	* Constant String for Keyspace
-	*/
 	private static final String KEYSPACE = "cassandra.keyspace";
-	/**
-	* Constant String for ContactPoints
-	*/
 	private static final String CONTACTPOINTS = "cassandra.contactpoints";
-	/**
-	* Constant String for Port 
-	*/
 	private static final String PORT = "cassandra.port";
 
 	@Bean

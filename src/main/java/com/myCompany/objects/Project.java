@@ -16,35 +16,4 @@ public class Project {
 	@Column(value = "budget")
 	public Float budget;
 
-	/*public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Float getBudget() {
-		return budget;
-	}
-
-	public void setBudget(Float budget) {
-		this.budget = budget;
-	}
-
-	/* (non-Javadoc)
-	* @see java.lang.Object#toString()
-	*/
-	/*@Override
-	public String toString() {
-	return "Project [id=" + id + ", name=" + name + ", budget=" + budget + "]";
-	} */
 }

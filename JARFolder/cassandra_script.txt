@@ -1,0 +1,14 @@
+create keyspace cmpe282SandyarathiDas036 with replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};
+
+use cmpe282SandyarathiDas036;
+
+CREATE TABLE employee(id int, firstname text, lastname text, PRIMARY KEY(id));
+CREATE TABLE project(id int, name text, budget float, PRIMARY KEY(id));
+
+
+INSERT INTO employee(id, firstname, lastname) VALUES(1, 'Kennedy', 'John');
+INSERT INTO employee(id, firstname, lastname) VALUES(2, 'McDreamy', 'Derek');
+
+INSERT INTO project(id, name, budget) VALUES(1, 'KellyMoore', 50000);
+INSERT INTO project(id, name, budget) VALUES(2, 'Kirkland', 70000);
+

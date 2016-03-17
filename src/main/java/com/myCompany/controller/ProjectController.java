@@ -21,7 +21,7 @@ import com.myCompany.objects.Project;
 import com.myCompany.service.ProjectService;
 
 @RestController
-@RequestMapping("/cmpe282SandyarathiDas4036/rest")
+@RequestMapping("/cmpe282SandyarathiDas036/rest")
 @Configuration
 @ComponentScan("com.company.service")
 public class ProjectController {
@@ -36,7 +36,6 @@ public class ProjectController {
 	@RequestMapping(value="/project", method = RequestMethod.POST, 
 			produces = "application/json", consumes= "application/json")
 	public ResponseEntity<Project> createProject( @RequestBody @Valid Project project){
-		Assert.notNull(project, "Request body is empty!");
 		Project proj = projectService.createProject(project);
 		if(proj !=null){
 			 if(projectService.projectExists(proj.id)){

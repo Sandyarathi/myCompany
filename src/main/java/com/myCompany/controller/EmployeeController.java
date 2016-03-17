@@ -18,12 +18,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.myCompany.objects.Employee;
-import com.myCompany.objects.Project;
 import com.myCompany.service.EmployeeService;
 
 
 @RestController
-@RequestMapping("/cmpe282SandyarathiDas4036/rest")
+@RequestMapping("/cmpe282SandyarathiDas036/rest")
 @Configuration
 @ComponentScan("com.company.service")
 public class EmployeeController {
@@ -37,8 +36,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/employee", method = RequestMethod.POST)
 	@ResponseBody
-	public ResponseEntity<Employee> createEmployee( @RequestBody Employee employee){
-		Assert.notNull(employee, "Request body is empty!");
+	public ResponseEntity<Employee> createEmployee( @RequestBody @Valid Employee employee){
 		Employee emp = employeeService.createEmployee(employee);
 		if(emp !=null){
 			 if(employeeService.employeeExists(emp.id)){

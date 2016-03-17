@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1447177759797
+Build-Jdk: 1.8.0_60
+Built-By: oliviermichallat
+Bundle-Description: A driver for Apache Cassandra 1.2+ that works exclus
+ ively with the Cassandra Query Language version 3 (CQL3) and Cassandra'
+ s binary protocol.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: DataStax Java Driver for Apache Cassandra - Core
+Bundle-SymbolicName: com.datastax.driver.core
+Bundle-Version: 2.1.9
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.datastax.driver.core;uses:="com.codahale.metrics,com
+ .datastax.driver.core.exceptions,com.datastax.driver.core.policies,com.
+ google.common.reflect,com.google.common.util.concurrent,io.netty.bootst
+ rap,io.netty.buffer,io.netty.channel,io.netty.channel.socket,io.netty.h
+ andler.codec,io.netty.util,javax.net.ssl,org.slf4j";version="2.1.9",com
+ .datastax.driver.core.exceptions;uses:="com.datastax.driver.core";versi
+ on="2.1.9",com.datastax.driver.core.policies;uses:="com.datastax.driver
+ .core,com.google.common.base";version="2.1.9",com.datastax.driver.core.
+ querybuilder;uses:="com.datastax.driver.core,com.datastax.driver.core.p
+ olicies";version="2.1.9",com.datastax.driver.core.schemabuilder;uses:="
+ com.datastax.driver.core,com.google.common.base";version="2.1.9",com.da
+ tastax.driver.core.utils;uses:="com.google.common.util.concurrent";vers
+ ion="2.1.9"
+Import-Package: com.google.common.base;version="[14.0,19)",com.google.co
+ mmon.collect;version="[14.0,19)",com.google.common.primitives;version="
+ [14.0,19)",com.google.common.reflect;version="[14.0,19)",com.google.com
+ mon.util.concurrent;version="[14.0,19)",com.codahale.metrics;version="[
+ 3.0,4)",io.netty.bootstrap;version="[4.0,5)",io.netty.buffer;version="[
+ 4.0,5)",io.netty.channel;version="[4.0,5)",io.netty.channel.group;versi
+ on="[4.0,5)",io.netty.channel.nio;version="[4.0,5)",io.netty.channel.so
+ cket;version="[4.0,5)",io.netty.channel.socket.nio;version="[4.0,5)",io
+ .netty.handler.codec;version="[4.0,5)",io.netty.handler.ssl;version="[4
+ .0,5)",io.netty.handler.timeout;version="[4.0,5)",io.netty.util;version
+ ="[4.0,5)";resolution:=optional,io.netty.util.concurrent;version="[4.0,
+ 5)";resolution:=optional,javax.naming,javax.naming.directory,javax.net.
+ ssl,net.jpountz.lz4;resolution:=optional,org.HdrHistogram;resolution:=o
+ ptional,org.slf4j;version="[1.7,2)",org.xerial.snappy;version="[1.0,2)"
+ ;resolution:=optional
+Tool: Bnd-2.1.0.20130426-122213

@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: bamboo
+Build-Jdk: 1.8.0_60
+Export-Package: org.springframework.cassandra.config;version="1.3.2.RE
+ LEASE";uses:="com.datastax.driver.core,com.datastax.driver.core.polic
+ ies,org.springframework.beans.factory,org.springframework.cassandra.c
+ ore,org.springframework.cassandra.core.keyspace,org.springframework.d
+ ao,org.springframework.dao.support",org.springframework.cassandra.con
+ fig.java;version="1.3.2.RELEASE";uses:="com.datastax.driver.core,com.
+ datastax.driver.core.policies,org.springframework.cassandra.config,or
+ g.springframework.cassandra.core,org.springframework.context.annotati
+ on",org.springframework.cassandra.config.xml;version="1.3.2.RELEASE";
+ uses:="com.datastax.driver.core,org.springframework.beans.factory,org
+ .springframework.beans.factory.config,org.springframework.beans.facto
+ ry.support,org.springframework.beans.factory.xml,org.w3c.dom",org.spr
+ ingframework.cassandra.core;version="1.3.2.RELEASE";uses:="com.datast
+ ax.driver.core,com.datastax.driver.core.exceptions,com.datastax.drive
+ r.core.policies,com.datastax.driver.core.querybuilder,org.springframe
+ work.cassandra.core.cql,org.springframework.cassandra.core.keyspace,o
+ rg.springframework.cassandra.support,org.springframework.dao",org.spr
+ ingframework.cassandra.core.converter;version="1.3.2.RELEASE";uses:="
+ com.datastax.driver.core,org.springframework.core.convert.converter",
+ org.springframework.cassandra.core.cql;version="1.3.2.RELEASE";uses:=
+ "com.datastax.driver.core",org.springframework.cassandra.core.cql.gen
+ erator;version="1.3.2.RELEASE";uses:="org.springframework.cassandra.c
+ ore.keyspace",org.springframework.cassandra.core.keyspace;version="1.
+ 3.2.RELEASE";uses:="com.datastax.driver.core,org.springframework.cass
+ andra.config,org.springframework.cassandra.core,org.springframework.c
+ assandra.core.cql",org.springframework.cassandra.core.util;version="1
+ .3.2.RELEASE",org.springframework.cassandra.support;version="1.3.2.RE
+ LEASE";uses:="com.datastax.driver.core,org.springframework.beans.fact
+ ory,org.springframework.dao,org.springframework.dao.support",org.spri
+ ngframework.cassandra.support.exception;version="1.3.2.RELEASE";uses:
+ ="org.springframework.dao"
+Bundle-SymbolicName: org.springframework.cassandra
+Bundle-Name: Spring Cassandra
+Bundle-Version: 1.3.2.RELEASE
+Bundle-ManifestVersion: 2
+Bundle-Vendor: Spring Data Cassandra Community
+Import-Package: com.datastax.driver.core;version="[0.1.0, 1.0.0)";reso
+ lution:="optional",com.datastax.driver.core.exceptions;version="[0.1.
+ 0, 1.0.0)";resolution:="optional",com.datastax.driver.core.policies;v
+ ersion="[0.1.0, 1.0.0)";resolution:="optional",com.datastax.driver.co
+ re.querybuilder;version="[0.1.0, 1.0.0)";resolution:="optional",org.s
+ lf4j;version="[1.5.0, 1.8.0)",org.springframework.beans.factory;versi
+ on="[3.1.0, 4.0.0)",org.springframework.beans.factory.config;version=
+ "[3.1.0, 4.0.0)",org.springframework.beans.factory.support;version="[
+ 3.1.0, 4.0.0)",org.springframework.beans.factory.xml;version="[3.1.0,
+  4.0.0)",org.springframework.context.annotation;version="[3.1.0, 4.0.
+ 0)",org.springframework.core.convert;version="[3.1.0, 4.0.0)",org.spr
+ ingframework.core.convert.converter;version="[3.1.0, 4.0.0)",org.spri
+ ngframework.core.convert.support;version="[3.1.0, 4.0.0)",org.springf
+ ramework.dao;version="[3.1.0, 4.0.0)",org.springframework.dao.support
+ ;version="[3.1.0, 4.0.0)",org.springframework.util;version="[3.1.0, 4
+ .0.0)",org.springframework.util.xml;version="[3.1.0, 4.0.0)",org.w3c.
+ dom;version="0"
+Tool: Bundlor 1.0.0.RELEASE
+

@@ -14,15 +14,23 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot' 
 
-jar {
-	baseName = 'myCompany'
-	version = '0.0.1-SNAPSHOT'
-}
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+task fatJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'myCompanyJar',  
+        	'Implementation-Version': 0.1,
+        	'Main-Class': 'com.myCompany.Application'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//Get dependencies from Maven central repository
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 

@@ -9,6 +9,7 @@ import org.springframework.data.cassandra.repository.config.EnableCassandraRepos
 @ComponentScan(basePackages="com.myCompany.")
 @EnableCassandraRepositories("com.myCompany.dao.")
 @EnableAutoConfiguration
+
 public class Application {
 
     public static void main(String[] args) {

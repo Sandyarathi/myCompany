@@ -7,11 +7,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 
-@ComponentScan(basePackages="com.myCompany.")
+//@ComponentScan(basePackages="com.myCompany.")
 @EnableCassandraRepositories("com.myCompany.dao.")
-@EnableAutoConfiguration
-@Configuration
-
+//@EnableAutoConfiguration
+//@Configuration
+@SpringBootApplication
 public class Application {
 
     public static void main(String[] args) {

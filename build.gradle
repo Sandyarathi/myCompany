@@ -13,6 +13,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot' 
+apply plugin: 'war'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -28,6 +29,12 @@ task fatJar(type: Jar) {
     with jar
 }
 
+
+dependencies {
+    // …
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    // …
+}
 //Get dependencies from Maven central repository
 repositories {
     mavenCentral()
